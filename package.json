@@ -7,15 +7,18 @@
     "vscode": "^1.96.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Linters"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:php"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "codeigniter-3-intelligence.helloWorld",
-        "title": "Hello World"
+        "command": "codeigniter-3-intelligence.analyzeCurrentFile",
+        "title": "Analyze Current File with CI3I"
       }
     ]
   },
